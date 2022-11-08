@@ -32,7 +32,7 @@ export default function TypeIt({ skillData, setStartSession }: Props) {
   return (
     <div className="relative flex h-[calc(100vh-64px)] flex-col items-center justify-center gap-5">
       <button
-        className="group  absolute top-[10px] right-20 flex items-start justify-center gap-4 rounded-lg border-2 border-[#e5e5e5] p-3 text-base hover:border-[#db3e3e4b] sm:gap-7 sm:text-xl"
+        className="group  absolute top-[10px] right-4 flex items-start justify-center gap-4 rounded-lg border-2 border-[#e5e5e5] p-3 text-base hover:border-[#db3e3e4b] sm:gap-7 sm:text-xl"
         onClick={() => {
           setStartSession(false);
           setWordNum(0);

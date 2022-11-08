@@ -63,7 +63,7 @@ export default function PairIt({ skillData, setStartSession }: Props) {
   return (
     <div className="mt-5 mb-20 flex flex-col items-center justify-center gap-5">
       <button
-        className="group flex items-start justify-center gap-4 rounded-lg border-2 border-[#e5e5e5] p-3 text-base hover:border-[#db3e3e4b] sm:top-[80px] sm:right-20 sm:gap-7 sm:text-xl"
+        className="group ml-auto mr-4 flex items-start justify-center gap-4 rounded-lg border-2 border-[#e5e5e5] p-3 text-base hover:border-[#db3e3e4b] sm:top-[80px] sm:right-20 sm:gap-7 sm:text-xl"
         onClick={() => setStartSession(false)}
       >
         {" "}
