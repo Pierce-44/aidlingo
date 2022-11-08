@@ -1,5 +1,6 @@
 import React from "react";
 import { SkillData } from "../pages";
+import PairIt from "./PairIt";
 import ReviewWords from "./ReviewWords";
 
 interface Props {
@@ -13,7 +14,7 @@ export default function SelectPracticeType({ setOpenSkill, skillData }: Props) {
 
   const games = [
     ReviewWords({ skillData, setStartSession }),
-    ReviewWords({ skillData, setStartSession }),
+    PairIt({ skillData, setStartSession }),
   ];
 
   return (
@@ -47,7 +48,13 @@ export default function SelectPracticeType({ setOpenSkill, skillData }: Props) {
               Review Words
               <div></div>
             </button>
-            <button className="group flex w-full items-center justify-between gap-10">
+            <button
+              className="group flex w-full items-center justify-between gap-10"
+              onClick={() => {
+                setStartSession(true);
+                setIndex(1);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
