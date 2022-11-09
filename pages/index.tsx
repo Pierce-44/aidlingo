@@ -27,7 +27,7 @@ export default function Home() {
       {openSkill ? (
         <SelectPracticeType setOpenSkill={setOpenSkill} skillData={skillData} />
       ) : (
-        <div className="mx-auto mt-10 flex max-w-[270px] flex-wrap gap-10">
+        <div className="mx-auto mt-10 mb-20 flex max-w-[270px] flex-wrap gap-10">
           {skillsData.sectionOne.map((data, index) => (
             <div key={index}>
               <div className="group rounded-full border-8 border-[#e5e5e5]">
