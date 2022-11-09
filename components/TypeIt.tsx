@@ -16,7 +16,9 @@ export default function TypeIt({ skillData, setStartSession }: Props) {
   function handleCheck(e: any) {
     e.preventDefault();
 
-    if (word === skillData?.words[wordNum]) {
+    if (
+      word.toLocaleLowerCase() === skillData?.words[wordNum].toLocaleLowerCase()
+    ) {
       setWordNum(wordNum + 1);
       setWord("");
 
