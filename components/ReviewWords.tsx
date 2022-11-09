@@ -88,7 +88,10 @@ export default function ReviewWords({ skillData, setStartSession }: Props) {
       </button>
       <button
         className="group absolute top-[20px] right-4 flex items-start justify-center gap-4 rounded-lg border-2 border-[#e5e5e5] p-3 text-base hover:border-[#db3e3e4b] sm:top-[80px] sm:right-20 sm:gap-7 sm:text-xl"
-        onClick={() => setStartSession(false)}
+        onClick={() => {
+          setStartSession(false);
+          setFactor(0);
+        }}
       >
         {" "}
         <svg
