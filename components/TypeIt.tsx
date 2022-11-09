@@ -68,7 +68,7 @@ export default function TypeIt({ skillData, setStartSession }: Props) {
               index === wordNum ? (
                 <p
                   key={index}
-                  className="flex h-[200px] w-[300px] items-center justify-center rounded-md bg-[#eeeeee]"
+                  className="flex h-[200px] w-[300px] items-center justify-center rounded-md text-xl sm:text-3xl"
                 >
                   {word}
                 </p>

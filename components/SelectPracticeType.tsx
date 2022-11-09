@@ -1,5 +1,6 @@
 import React from "react";
 import { SkillData } from "../pages";
+import GuessIt from "./GuessIt";
 import PairIt from "./PairIt";
 import ReviewWords from "./ReviewWords";
 import TypeIt from "./TypeIt";
@@ -17,6 +18,7 @@ export default function SelectPracticeType({ setOpenSkill, skillData }: Props) {
     ReviewWords({ skillData, setStartSession }),
     PairIt({ skillData, setStartSession }),
     TypeIt({ skillData, setStartSession }),
+    GuessIt({ skillData, setStartSession }),
   ];
 
   return (
@@ -98,7 +100,13 @@ export default function SelectPracticeType({ setOpenSkill, skillData }: Props) {
               Type It
               <div></div>
             </button>
-            <button className="group flex w-full items-center justify-between gap-10">
+            <button
+              className="group flex w-full items-center justify-between gap-10"
+              onClick={() => {
+                setStartSession(true);
+                setIndex(3);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
