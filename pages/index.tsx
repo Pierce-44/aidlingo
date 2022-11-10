@@ -27,9 +27,16 @@ export default function Home() {
       {openSkill ? (
         <SelectPracticeType setOpenSkill={setOpenSkill} skillData={skillData} />
       ) : (
-        <div className="mx-auto mt-10 mb-20 flex max-w-[270px] flex-wrap gap-10">
+        <div className="mx-auto mt-10 mb-20 flex max-w-[270px] flex-wrap items-center justify-center gap-10">
           {skillsData.sectionOne.map((data, index) => (
-            <div key={index}>
+            <div
+              className={
+                data.style === "fullWidth"
+                  ? "flex w-full flex-col items-center justify-center"
+                  : ""
+              }
+              key={index}
+            >
               <div className="group rounded-full border-8 border-[#e5e5e5]">
                 <button
                   className="m-2 transform rounded-full bg-gradient-to-bl from-[#c3caff] to-[#a0cdf7] duration-200 group-hover:scale-105"
@@ -41,7 +48,6 @@ export default function Home() {
                   <SkillsSVGs imageName={data.skillImg} />
                 </button>
               </div>
-
               <p className="mt-2 text-center">{data.skillName}</p>
             </div>
           ))}

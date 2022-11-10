@@ -3,6 +3,7 @@ export const skillsData = {
     {
       skillName: "Introdução",
       skillImg: "egg",
+      style: "fullWidth",
       words: [
         "hello",
         "please",
@@ -41,6 +42,7 @@ export const skillsData = {
     {
       skillName: "Saudações",
       skillImg: "speach",
+      style: "",
       words: [
         `what's your name`,
         "welcome",
@@ -81,6 +83,7 @@ export const skillsData = {
     {
       skillName: "Viagem",
       skillImg: "plane",
+      style: "",
       words: [
         "a",
         "taxi",
@@ -129,6 +132,7 @@ export const skillsData = {
     {
       skillName: "Cardápio",
       skillImg: "burger",
+      style: "",
       words: [
         "menu",
         "small",
@@ -177,6 +181,7 @@ export const skillsData = {
     {
       skillName: "Encontros",
       skillImg: "speach",
+      style: "",
       words: [
         "Portuguese",
         "speak",
@@ -219,6 +224,7 @@ export const skillsData = {
     {
       skillName: "Família",
       skillImg: "child",
+      style: "",
       words: [
         "she is",
         "sister",
@@ -269,6 +275,7 @@ export const skillsData = {
     {
       skillName: "Carreira",
       skillImg: "hat",
+      style: "",
       words: [
         "job",
         "an",
@@ -319,6 +326,7 @@ export const skillsData = {
     {
       skillName: "Loja",
       skillImg: "sock",
+      style: "fullWidth",
       words: [
         "store",
         "open",
@@ -363,8 +371,56 @@ export const skillsData = {
       ],
     },
     {
+      skillName: "Presente 1",
+      skillImg: "lightBulb",
+      style: "fullWidth",
+      words: [
+        "are",
+        "I",
+        "are you",
+        "is",
+        "I have",
+        "your",
+        "is he",
+        "she has",
+        "he has",
+        "is she",
+        "you have",
+        "he is",
+        "there is",
+        "she is",
+        "this is",
+        "to work",
+        "to live",
+        "to understand",
+        "to speak",
+      ],
+      translation: [
+        "são/estão",
+        "eu",
+        "você é/está",
+        "é/está",
+        "eu tenho",
+        "sua",
+        "ele é/está",
+        "ela tem",
+        "ele tem",
+        "ela é/está",
+        "Você tem",
+        "ele é/está",
+        "tem",
+        "ela é/está",
+        "isto é/está",
+        "trabalhar",
+        "viver",
+        "entender",
+        "falar",
+      ],
+    },
+    {
       skillName: "Meu dia",
       skillImg: "woman",
+      style: "",
       words: [
         "every day",
         "drink",
@@ -413,6 +469,7 @@ export const skillsData = {
     {
       skillName: "Gostos",
       skillImg: "glasses",
+      style: "",
       words: [
         "do you like",
         "like",

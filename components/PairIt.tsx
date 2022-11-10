@@ -87,7 +87,9 @@ export default function PairIt({ skillData, setStartSession }: Props) {
         <div className="flex flex-col gap-4">
           {shuffledWords.map((word, index) => (
             <button
-              className={`${word === "" ? "" : "bg-[#eeeeee]"} ${
+              className={`${
+                word === "" ? "pointer-events-none" : "bg-[#eeeeee]"
+              } ${
                 word === wordToCheck ? "bg-[#2cff5a]" : ""
               } h-20 min-w-[150px] transform rounded-md p-4 duration-100 hover:scale-105`}
               id={word}
@@ -112,7 +114,9 @@ export default function PairIt({ skillData, setStartSession }: Props) {
         <div className="flex flex-col gap-4">
           {shuffledTranslations.map((word, index) => (
             <button
-              className={`${word === "" ? "" : "bg-[#eeeeee]"} ${
+              className={`${
+                word === "" ? "pointer-events-none" : "bg-[#eeeeee]"
+              } ${
                 word === wordToCheck ? "bg-[#2cff5a]" : ""
               } h-20 min-w-[150px] transform rounded-md p-4 duration-100 hover:scale-105`}
               id={word}
